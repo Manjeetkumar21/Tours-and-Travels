@@ -1875,9 +1875,10 @@ body.visible-sidebar{
   display: table;
   vertical-align: middle;
   width: 100%;
-  padding: 200px 0px 50px;
-  height: 1080px;
+  padding: 100px 0px 50px;
+  height: 880px;
   z-index: 10;
+ 
 }
 
 .banner-section .slide-item .content{
