@@ -91,7 +91,8 @@
 	}
 
 	.main-header .header-upper{
-		top: 50px;
+		/* top: 50px; */
+		top: 0px;
 	}
 
 	.fixed-header .header-upper,

@@ -875,7 +875,7 @@ form label.error{
   width: 100%;
   padding: 0px 0px;
   background: none;
-  min-height: 100px;
+  /* min-height: 100px; */
   font-family: 'Poppins', sans-serif;
   z-index: 999;
 }
@@ -1073,7 +1073,8 @@ form label.error{
 .main-header .header-upper{
   position: absolute;
   left: 0;
-  top: 60px;
+  /* top: 60px; */
+  top: 0px;
   width: 100%;
   background: none;
   padding: 0 0;
@@ -4553,7 +4554,7 @@ body.visible-sidebar{
 
 .main-footer .copyright a{
   position: relative;
-  color: #ffffff;
+  color: #505050;
 }
 
 .main-footer .copyright a:hover{
