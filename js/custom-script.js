@@ -59,37 +59,8 @@
 	        }
 	    });
 	}
+
 	
-	//Hidden Bar Menu Config
-	function hiddenBarMenuConfig() {
-		var menuWrap = $('.hidden-bar .side-menu');
-		// appending expander button
-		menuWrap.find('li.dropdown > a').append(function () {
-			return '<button type="button" class="btn-expander"><i class="icon sl-icon-arrow-down"></i></button>';
-		});
-		// hidding submenu
-		menuWrap.find('.dropdown').children('ul').hide();
-
-		$(".hidden-bar .side-menu ul li.dropdown .btn-expander").on('click', function(e) {
-			e.preventDefault();
-			if ($(this).parents('li').children('ul').is(':visible')){
-				$(this).parents('li').children('ul').slideUp();
-				$(this).find('i').toggleClass('sl-icon-arrow-up');
-				return false;
-			}else{
-				$(this).parents('.navigation').children('li').children('ul').hide();
-				$(this).parents('.navigation').children('li').children('a').find('i').removeClass('sl-icon-arrow-up');
-				$(this).parents('.navigation').children('li').children('a').find('i').addClass('sl-icon-arrow-down');
-				$(this).parents('li').children('ul').slideToggle();
-				// toggling arrow of expander
-				$(this).find('i').toggleClass('sl-icon-arrow-up');
-				return false;
-			}
-			
-		});
-	}
-
-	hiddenBarMenuConfig();
 
 
 	//Custom Scroll for Hidden Sidebar
