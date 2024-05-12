@@ -202,6 +202,70 @@
     </section>
     <!--End Banner Section -->
 
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container my-5">
+            <div class="title-box d-flex justify-content-center">
+                <h2><i class="bg-vector"></i><span>Book Now</span></h2>
+            </div>
+        
+            <!-- Tabbed Form -->
+            <div class="card">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="bookingTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="carRental-tab" data-toggle="tab" href="#carRental" role="tab" aria-controls="carRental" aria-selected="true">Car Rental</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="travelPackage-tab" data-toggle="tab" href="#travelPackage" role="tab" aria-controls="travelPackage" aria-selected="false">Travel Package</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content" id="bookingTabContent">
+                  <div class="tab-pane fade show active" id="carRental" role="tabpanel" aria-labelledby="carRental-tab">
+                    <div class="form-container">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="pickupLocation" placeholder="Pickup Location">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="dropoffLocation" placeholder="Dropoff Location">
+                      </div>
+                      <div class="form-group">
+                        <input type="date" class="form-control" id="pickupDate">
+                      </div>
+                      <div class="form-group">
+                        <input type="date" class="form-control" id="dropoffDate" placeholder="Drop off date">
+                      </div>
+                      <button type="submit" class="btn btn-outline-primary">Book Car</button>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="travelPackage" role="tabpanel" aria-labelledby="travelPackage-tab">
+                    <div class="form-container">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="destination" placeholder="Destination">
+                      </div>
+                      <div class="form-group">
+                        <input type="date" class="form-control" id="startDate" placeholder="Start Date">
+                      </div>
+                      <div class="form-group">
+                        <input type="date" class="form-control" id="endDate" placeholder="End Date">
+                      </div>
+                      <div class="form-group">
+                        <input type="number" class="form-control" id="travelers" placeholder="Number of Travelers">
+                      </div>
+                      <button type="submit" class="btn btn-outline-primary">Book Package</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- End From Section -->
+
+
     <!--About Us Section-->
     <section class="about-us">
         <div class="floated-icon right"><img src="images/resource/about-stone-right.svg" alt="" title=""></div>
@@ -1129,6 +1193,10 @@
 <script src="js/owl.js"></script>
 <script src="js/wow.js"></script>
 <script src="js/custom-script.js"></script>
+<script>
+    const dateInput = document.getElementById('dropoffdate');
+    dateInput.placeholder = 'MM/DD/YYYY';
+</script>
 </body>
 
 <!-- Mirrored from themeim.com/demo/treker/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 May 2024 12:31:29 GMT -->

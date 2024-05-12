@@ -2365,6 +2365,75 @@ body.visible-sidebar{
   padding-top: 30px;
 }
 
+/*** 
+
+====================================================================
+  Form Section
+====================================================================
+
+***/
+
+.card-header{
+  background-color: #1998D9;
+}
+
+#carRental-tab, #travelPackage-tab{
+  color: white;
+}
+
+.form-section .card .card-header .nav .nav-item .active{
+  color: #1998D9 !important;
+}
+
+.nav-tabs .nav-link.active{
+  border-color: #ffffff !important;
+  
+}
+.form-section{
+  border: 1px solid rgb(255, 255, 255);
+  background: url("../images/resource/about-vector-1.png");
+  background-repeat: no-repeat;
+}
+
+.form-section .btn-outline-primary{
+  color: #1998D9 !important;
+  border-color: #1998D9 !important;
+}
+
+.form-section .btn-outline-primary:hover{
+  background-color: #1998D9;
+  color: #ffffff !important;
+}
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.form-container .form-group {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.form-container .btn {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-section .card-body{
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(10px);
+}
+@media (max-width: 767px) {
+  .form-container .form-group,
+  .form-container .btn {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 
 /*** 
 
