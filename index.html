@@ -211,56 +211,70 @@
             </div>
         
             <!-- Tabbed Form -->
-            <div class="card">
-              <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs" id="bookingTab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="carRental-tab" data-toggle="tab" href="#carRental" role="tab" aria-controls="carRental" aria-selected="true">Car Rental</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="travelPackage-tab" data-toggle="tab" href="#travelPackage" role="tab" aria-controls="travelPackage" aria-selected="false">Travel Package</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <div class="tab-content" id="bookingTabContent">
-                  <div class="tab-pane fade show active" id="carRental" role="tabpanel" aria-labelledby="carRental-tab">
-                    <div class="form-container">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="pickupLocation" placeholder="Pickup Location">
-                      </div>
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="dropoffLocation" placeholder="Dropoff Location">
-                      </div>
-                      <div class="form-group">
-                        <input type="date" class="form-control" id="pickupDate">
-                      </div>
-                      <div class="form-group">
-                        <input type="date" class="form-control" id="dropoffDate" placeholder="Drop off date">
-                      </div>
-                      <button type="submit" class="btn btn-outline-primary">Book Car</button>
-                    </div>
+    <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs" id="bookingTab" role="tablist">
+            <li class="nav-item mr-2">
+              <a class="nav-link active" id="carRental-tab" data-toggle="tab" href="#carRental" role="tab" aria-controls="carRental" aria-selected="true">Car Rental</a>
+            </li>
+            <li class="nav-item ml-2">
+              <a class="nav-link" id="travelPackage-tab" data-toggle="tab" href="#travelPackage" role="tab" aria-controls="travelPackage" aria-selected="false">Travel Package</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="tab-content" id="bookingTabContent">
+            <div class="tab-pane fade show active" id="carRental" role="tabpanel" aria-labelledby="carRental-tab">
+              <form>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="pickupLocation">Pickup Location</label>
+                    <input type="text" class="form-control" id="pickupLocation" placeholder="Enter pickup location">
                   </div>
-                  <div class="tab-pane fade" id="travelPackage" role="tabpanel" aria-labelledby="travelPackage-tab">
-                    <div class="form-container">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="destination" placeholder="Destination">
-                      </div>
-                      <div class="form-group">
-                        <input type="date" class="form-control" id="startDate" placeholder="Start Date">
-                      </div>
-                      <div class="form-group">
-                        <input type="date" class="form-control" id="endDate" placeholder="End Date">
-                      </div>
-                      <div class="form-group">
-                        <input type="number" class="form-control" id="travelers" placeholder="Number of Travelers">
-                      </div>
-                      <button type="submit" class="btn btn-outline-primary">Book Package</button>
-                    </div>
+                  <div class="form-group col-md-6">
+                    <label for="dropoffLocation">Dropoff Location</label>
+                    <input type="text" class="form-control" id="dropoffLocation" placeholder="Enter dropoff location">
                   </div>
                 </div>
-              </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="pickupDate">Pickup Date</label>
+                    <input type="date" class="form-control" id="pickupDate">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="dropoffDate">Dropoff Date</label>
+                    <input type="date" class="form-control" id="dropoffDate">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Book Car</button>
+              </form>
             </div>
+            <div class="tab-pane fade" id="travelPackage" role="tabpanel" aria-labelledby="travelPackage-tab">
+              <form>
+                <div class="form-group">
+                  <label for="destination">Destination</label>
+                  <input type="text" class="form-control" id="destination" placeholder="Enter destination">
+                </div>
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="startDate">Start Date</label>
+                    <input type="date" class="form-control" id="startDate">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="endDate">End Date</label>
+                    <input type="date" class="form-control" id="endDate">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="travelers">Number of Travelers</label>
+                  <input type="number" class="form-control" id="travelers" placeholder="Enter number of travelers">
+                </div>
+                <button type="submit" class="btn btn-outline-primary">Book Package</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
           </div>
     </section>
     <!-- End From Section -->

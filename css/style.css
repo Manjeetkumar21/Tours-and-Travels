@@ -454,7 +454,7 @@ form .row{
 form .row .form-group{
   position:relative;
   padding: 0 15px;
-  margin-bottom: 30px;
+  
 }
 
 form .field-inner{
@@ -496,21 +496,17 @@ form .form-group input[type="tel"],
 form .form-group input[type="url"],
 form .form-group input[type="file"],
 form .form-group input[type="number"],
+form .form-group input[type="date"],
 form .form-group textarea,
 form .form-group select{
     position: relative;
     display: block;
-    height: 54px;
     width: 100%;
-    font-size: 16px;
     color: #101010;
     line-height: 30px;
     font-weight: 500;
-    padding: 11px 20px;
-    padding-right: 48px;
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius:0px;
+    border: 1px solid #1999d9c4;
     -webkit-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
@@ -553,6 +549,7 @@ form .form-group input[type="tel"]:focus,
 form .form-group input[type="url"]:focus,
 form .form-group input[type="file"]:focus,
 form .form-group input[type="number"]:focus,
+form .form-group input[type="date"]:focus,
 form .form-group textarea:focus,
 form .form-group select:focus,
 .form-group .ui-selectmenu-button.ui-button:focus,
@@ -2307,7 +2304,7 @@ body.visible-sidebar{
   position: absolute;
   left: 0;
   top: 10px;
-  width: 287px;
+  width: 290px;
   height: 44px;
   background: url(../images/icons/title-vector.svg) no-repeat;
   z-index: 0;
@@ -2386,13 +2383,17 @@ body.visible-sidebar{
 }
 
 .nav-tabs .nav-link.active{
-  border-color: #ffffff !important;
+  border-color: #ffffffb3 !important;
   
 }
 .form-section{
   border: 1px solid rgb(255, 255, 255);
   background: url("../images/resource/about-vector-1.png");
   background-repeat: no-repeat;
+}
+
+.form-section .title-box h2{
+  padding-inline: 2rem;
 }
 
 .form-section .btn-outline-primary{
@@ -2404,34 +2405,26 @@ body.visible-sidebar{
   background-color: #1998D9;
   color: #ffffff !important;
 }
-.form-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.nav-tabs {
+  justify-content: center;
 }
-.form-container .form-group {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-.form-container .btn {
-  margin-left: 1rem;
+.form-group {
   margin-bottom: 1rem;
 }
-
-.form-section .card-body{
-  background-color: rgba(255, 255, 255, 0.4) !important;
-  backdrop-filter: blur(10px);
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-@media (max-width: 767px) {
-  .form-container .form-group,
-  .form-container .btn {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-  }
+.form-control::placeholder {
+  color: #999;
+  font-style: italic;
+}
+.form-control:focus::placeholder {
+  color: transparent;
+}
+.form-section .card {
+  border: none;
+    background-color: rgba(255, 255, 255, 0.508);
+    backdrop-filter: blur(10px);
 }
 
 
