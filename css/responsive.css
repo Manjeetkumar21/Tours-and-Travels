@@ -1049,6 +1049,10 @@
 		margin-left: 0;
 	}
 
+	.form-section .title-box h2{
+		padding-inline: 5rem;
+	  }
+
 	.trek-block-one .ratings .rev{
 		margin-left: 20px;
 	}
